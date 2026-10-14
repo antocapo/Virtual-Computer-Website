@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Power On — Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <svg
+        class="city"
+        id="city"
+        viewBox="0 0 1600 600"
+        preserveAspectRatio="xMidYMax slice"
+      ></svg>
+      <div class="glass"></div>
+      <div class="mull"></div>
+      <div class="tabletop"></div>
+    </div>
+    <div class="theme" role="group" aria-label="Theme">
+      <button id="tl" aria-label="Light mode">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-sun"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.93 4.93 1.41 1.41" />
+          <path d="m17.66 17.66 1.41 1.41" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.34 17.66-1.41 1.41" />
+          <path d="m19.07 4.93-1.41 1.41" />
+        </svg></button
+      ><button id="td" aria-label="Dark mode">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-moon"
+        >
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        </svg>
+      </button>
+    </div>
+    <p class="hint" id="hint">
+      The screen is dark. Press the <b>power button</b> to start the machine.
+    </p>
+    <div class="pc" id="pc">
+      <div class="monitor">
+        <div class="bezel">
+          <div class="screen" id="screen">
+            <div class="off-glass"></div>
+            <div class="layer" id="boot"></div>
+            <div class="layer" id="desk">
+              <div class="icons" id="icons"></div>
+              <div class="bar">
+                <b>FolioOS</b><span id="who"></span><span class="sp"></span
+                ><span id="clock"></span>
+              </div>
+              <div class="hello" id="hello"></div>
+            </div>
+          </div>
+        </div>
+        <div class="base">
+          <span class="led"></span><span class="brand">PORTFOLIO-86</span>
+          <button class="pwr" id="pwr" aria-label="Power on">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3v8M6.5 6.7a8 8 0 1 0 11 0" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="stand"></div>
+      <div class="foot"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
